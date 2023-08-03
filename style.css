@@ -1,0 +1,408 @@
+body{
+    margin:0;
+    height:100%;
+    width:100%;
+}
+.header,.side_panel{
+    position:fixed;
+}
+.header{
+    top:0;
+    left:0;
+    right:0;
+    width:100%;
+    height:7%;
+    /* background-color: aqua; */
+    /* display: flex; */
+}
+.navbar{
+    height:20px;
+    margin:0;
+    list-style-type: none;
+}
+.navbar li{
+    float:right;
+}
+.navbar li img{
+    float:right;
+    position:relative;
+    width:30px;
+    padding:10px;
+}
+.sidebarFull{
+    height:100%;
+    width:15%;
+    position:fixed;
+}
+.headerLeft{
+    position:fixed;
+    top:0;
+    left:0;
+    width:15%;
+    border-right:2px solid lightgrey;
+}
+.headerLeftA{
+    position:fixed;
+    top:0;
+    left:0;
+    width:5%;
+}
+.logoFull{
+    height:100%;
+    width:80%;
+    /* padding-right:10%; */
+}
+.logoHalf{
+    height:100%;
+    width:70%;
+    padding-right:10%;
+    display:none;
+}
+.clickableButton{
+    position:fixed;
+    width: 50px;
+    height: 60px;
+	/* border-radius: 50%; */
+    background-color:white;
+}
+.clickableButtonA{
+    width: 30px;
+    height:60px;
+    /* border-radius:50%; */
+    background-color:black;
+}
+.side_panel{
+    top:7%;
+    width:15%;
+    height:93%;
+    background-color: white;
+    overflow-x: hidden;
+    overflow-y: scroll;
+} 
+.side_panelA{
+    top:7%;
+    width:5%;
+    height:93%;
+    background-color:white;
+    overflow-x:hidden;
+    overflow-y:scroll;
+}
+/* .side_panelA:hover,.headerLeftA{
+    width:15%;
+} */
+/* .headerLeftA:hover{
+    width:15%;
+}  */
+.list{
+    height:93%;
+    width:15%; 
+    /* background-color: grey; */
+    position:fixed;
+    overflow-x:hidden;
+    overflow-y:scroll;
+}
+.listA{
+    height:93%;
+    width:5%; 
+    /* background-color: grey; */
+    position:fixed;
+    overflow-x:hidden;
+    overflow-y:scroll;
+    scrollbar-color:rgb(189, 189, 189);
+    scrollbar-width: 0.1%;
+}
+.side_panel a{
+    margin:22px;
+    padding: 26px ;
+    text-decoration:none;
+    color:#212B36;
+    font-size:15px;
+    display:block;
+    border-radius: 5px;
+}
+.side_panelA a{
+    margin:20px;
+    padding: 22px ;
+    text-decoration:none;
+    color:darkgrey;
+    font-size:20px;
+    display:block;
+    border-radius: 8px;
+}
+a:active{
+    background-color: darkblue;
+    color:white;
+}
+a:hover{
+    background-color: darkblue;
+    color:white;
+}
+a:link{
+    background-color: white;
+}
+.content_area{
+    left:15%;
+    position:fixed;
+    top:7%;
+    height:93%;
+    width:85%;
+    background-color: lightgrey;
+    overflow-y:scroll;
+    display:flex;
+    flex-wrap:wrap;
+}
+.content_areaA{
+    left:5%;
+    top:7%;
+    height:93%;
+    width: 95%;
+    background:lightgrey ;
+    overflow-y:scroll;
+    display:flex;
+    flex-wrap:wrap;
+}
+.cardRowA{
+    display:flex;
+    margin-top:3%;
+    width:100%;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+}
+.cardRow1{
+    height:60px;
+    width:260px;
+    padding: 1%;
+    display:flex;
+    margin:1%;
+    background-color: white;
+    border-radius: 5px;
+    justify-content: space-around;
+    overflow:auto;
+    object-fit: cover;
+}
+.cardContentA{
+    display:block;
+    padding-left: 20px;
+    font-size:13px;
+}
+.cardRow2a{
+    height:80px;
+    width:260px;
+    padding: 1%;
+    display:flex;
+    margin:1%;
+    background-color: orange;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.cardRow2b{
+    height:80px;
+    width:260px;
+    padding: 1%;
+    display:flex;
+    margin:1%;
+    background-color: lightblue;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.cardRow2c{
+    height:80px;
+    width:260px;
+    padding: 1%;
+    display:flex;
+    margin:1%;
+    background-color: darkslateblue;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.cardRow2d{
+    height:80px;
+    width:260px;
+    padding: 1%;
+    display:flex;
+    margin:1%;
+    background-color: lightgreen;
+    border-radius: 8px;
+    overflow:auto;
+    object-fit: cover;
+}
+.cardContentB{
+    display:block;
+    padding-right: 80px;
+    font-size:13px;
+}
+.cardRow2a:hover img{
+    transition: .5s;
+    transform:scale(1.2);
+}
+.cardRow2b:hover img{
+    transition: .5s;
+    transform:scale(1.2);
+}
+.cardRow2c:hover img{
+    transition: .5s;
+    transform:scale(1.2);
+}
+.cardRow2d:hover img{
+    transition: .5s;
+    transform:scale(1.2);
+}
+.cardRowB{
+    display:flex;
+    margin-top:3%;
+    width:100%;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+.cardRow3a{
+    height:330px;
+    width:700px;
+    padding: 1%;
+    margin:1%;
+    background-color: white;
+    border-radius: 8px;
+    justify-content: space-evenly;
+    object-fit: cover;
+}
+.cardRow3b{
+    height:330px;
+    /* width:480px; */
+    /* width: 20%; */
+    padding: 1%;
+    margin:1%;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    object-fit: cover;
+}
+.cardContentC{
+    font-size:100%;
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+}
+.cardContentC p{
+    display:flex;
+    margin:3%;
+}
+.cardContentC span{
+    margin:1%;
+}
+.cardContentC select{
+    width:90px;
+    height:30px;
+}
+.dotA{
+    height:17px;
+    width:17px;
+    border-radius:50%;
+    background-color: green;
+    display:inline-block;
+}
+.dotB{
+    height:17px;
+    width:17px;
+    border-radius:50%;
+    background-color: red;
+    display:inline-block;
+}
+.cardRow3a img{
+    width:90%;
+    height:70%;
+    margin:2%;
+}
+.table{
+    /* display:block; */
+    width: 500px;
+    ;
+    /* padding:20px; */
+    /* position:fixed; */
+    /* margin-top:40px; */
+}
+table,th,td{
+    border-collapse: collapse;
+    margin:0px; 
+    width:30%;
+    text-align:center;
+    border-bottom:1px solid lightgrey;
+}
+thead{
+    background:FAFBFE;
+}
+table{
+    width:100%;
+    /* height:100%; */
+    /* overflow:scroll; */
+}
+th,td{
+    padding:15px;
+    white-space: nowrap;
+}
+table img{
+    height:100%;
+    width:20%;
+}
+
+@media screen and (min-width :2500px) {
+    .cardRow1{
+        width:20%;
+    }
+    .cardRow2a,.cardRow2b,.cardRow2c,.cardRow2d{
+        width:20%;
+    }
+    .cardRow3a{
+        width:50%;
+    }
+    .cardRow3b{
+        width:40%;
+    }
+    .table{
+        width:500px;
+    }
+}
+
+@media screen and (min-width:1400px) and (max-width:2499px){
+    .cardRow1{
+        width:250px;
+    }
+    .cardRow2a,.cardRow2b,.cardRow2c,.cardRow2d{
+        width:250px;
+    }
+    .cardRow3a{
+        width:60%;
+    }
+    .cardRow3b{
+        width:30%;
+    }
+    .table{
+        width:400px;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1399px){
+    .cardRow1{
+        width:150px;
+    }
+    .cardRow2a,.cardRow2b,.cardRow2c,.cardRow2d{
+        width:150px;
+    }
+    .cardContentB{
+        padding-right:20px;
+    }
+    .cardRow2a img,.cardRow2b img,.cardRow2c img,.cardRow2d img{
+        height:50px;
+        width:30px;
+        padding-top:15px;
+    }
+    .cardRow3a{
+        width:60%;
+    }
+    .cardRow3b{
+        width:30%;
+    }
+    .table{
+        width:300px;
+    }
+}
