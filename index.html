@@ -10,163 +10,515 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-left-active">
-            <img src="images/dreampos_without button.png.jpg" alt="dreamspos image">
-            <button type="button" title="sidebar button active" onclick="sidebar()">
-                <i class="bi bi-0-circle"></i>
-            </button>
-            <img src="images/dreampos.jpg" alt="dreampos" class="img-center">
-        </div>
 
-        <div class="header-center">
-            <button type="button" title="sidebaAr button active">
-                <i class="bi bi-justify"></i>
-            </button>
-            <!-- <div class="img-center">
-                <img src="images/dreampos.jpg" alt="dreampos">
-            </div> -->
-        </div>
-
-        <div class="header-left-reduced">
-
-        </div>
-        <div class="header-right">
-            <ul>
-                <li>
-                    <img src="images/search.png" alt="search icon" onclick="searchBarShow()">
-                </li>
-                <li>
-                    <img src="images/indianFlag.jfif" alt="flag" onclick="flagShow()">
-                </li>
-                <li>
-                    <img src="images/bell.png" alt="notification icon" onclick="notificationShow()">
-                </li>
-                <li>
-                    <i class="bi bi-person-circle" onclick="profileShow()" style="opacity: .7;"></i>
-                </li>
-            </ul>
-        </div>
-    </header>
-
-    <div class="sidebar-active">
-        <div class="sidebar-menu">
-            <ul>
-                <li>
-                    <a href="#">
-                        <i class="bi bi-speedometer2"></i>
-                        <span>Dashboard</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="bi bi-box-seam"></i>
-                        <span>Product</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="bi bi-cart"></i>
-                        <span>Sales</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="bi bi-receipt-cutoff"></i>
-                        <span>Purchase</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="bi bi-wallet2"></i>
-                        <span>Expense</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="bi bi-cart-plus"></i>
-                        <span>Quotation</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="bi bi-arrow-left-right"></i>
-                        <span>Transfer</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="bi bi-arrow-return-left"></i>
-                        <span>Return</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="bi bi-person"></i>
-                        <span>People</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="bi bi-speedometer2"></i>
-                        <span>Places</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="bi bi-database"></i>
-                        <span>Components</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="bi bi-file-earmark"></i>
-                        <span>Blank Page</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="bi bi-exclamation-circle"></i>
-                        <span>Error Pages</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="bi bi-box"></i>
-                        <span>Elements</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="bi bi-bar-chart"></i>
-                        <span>Charts</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="bi bi-award"></i>
-                        <span>Icons</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="bi bi-layout-split"></i>
-                        <span>Forms</span>
-                    </a>
-                </li>
-            </ul>
+    <div class="header">
+        <ul class="header-right">
+            <li><img src="images/search.png" alt="search icon" style="width:19px;"></li>
+            <li><img src="images/indianFlag.jfif" alt="indian flag"></li>
+            <li><img src="images/bell.png" alt="notification" style="width:24px;"></li>
+            <li><img src="images/profile.png" alt="profile" style="width:29px;"></li>
+        </ul>
+        <div class="dropdown">
+            <i class="bi bi-three-dots-vertical" class="header-right-button-small" onclick="headerRightSmall()"></i>
+            <div class="dropdown-menu">
+                <span>
+                    My Profile
+                </span>
+                <span>
+                    Settings
+                </span>
+                <span>
+                    Logout
+                </span>
+            </div>
         </div>
     </div>
 
     <div class="page-wrapper">
+        <div class="content-area">
+
+            <div class="card-rowone">
+
+                <div class="card-rowone-card">
+                    <img src="images/shop.jpeg" alt="shopimage">
+                    <div class="card-row-one-card-wordcontent">
+                        <h2>$307144</h2>
+                        <p>Total Purchase Due</p>
+                    </div>
+                </div>
+
+                <div class="card-rowone-card">
+                    <img src="images/camera.jpeg" alt="shop">
+                    <div class="card-row-one-card-wordcontent">
+                        <h2>$4385</h2>
+                        <p>Total Sales Due</p>
+                    </div>
+                </div>
+
+                <div class="card-rowone-card">
+                    <img src="images/download.jpeg" alt="shop">
+                    <div class="card-row-one-card-wordcontent">
+                        <h2>$385656.5</h2>
+                        <p>Total Sales Amount</p>
+                    </div>
+                </div>
+
+                <div class="card-rowone-card">
+                    <img src="images/upload.jpeg" alt="shop">
+                    <div class="card-row-one-card-wordcontent">
+                        <h2>$40000</h2>
+                        <p>Total Sale Amount</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-rowone">
+
+                <div class="card-rowtwo-firstcard">
+                    <div class="card-rowtwo-card-wordcontent">
+                        <h2>100</h2>
+                        <p>Customers</p>
+                    </div>
+                    <img src="images/customer.png" alt="shop">
+                </div>
+
+                <div class="card-rowtwo-secondcard">
+                    <div class="card-rowtwo-card-wordcontent">
+                        <h2>100</h2>
+                        <p>Suppliers</p>
+                    </div>
+                    <img src="images/supplier.png" alt="shop">
+                </div>
+
+                <div class="card-rowtwo-thirdcard">
+                    <div class="card-rowtwo-card-wordcontent">
+                        <h2>100</h2>
+                        <p>Purchase Invoice</p>
+                    </div>
+                    <img src="images/purchase invoice.png" alt="shop">
+                </div>
+
+                <div class="card-rowtwo-fourthcard">
+                    <div class="card-rowtwo-card-wordcontent">
+                        <h2>105</h2>
+                        <p>Sales Invoice</p>
+                    </div>
+                    <img src="images/sales invoice.png" alt="shop">
+                </div>
+
+            </div>
+
+            <div class="card-rowthree">
+
+                <div class="card-rowthree-firstcard">
+                    <div class="card-rowthree-card-wordcontent">
+
+                        <div>
+                            <h2>Purchase and Sales</h2>
+                        </div>
+
+                        <div style="display:flex;padding:5px;">
+                            <p><span class="dotA"> </span> Sales</p>
+                            <p><span class="dotB"> </span> Purchase</p>
+                            <select name="year" id="year">
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <img src="images/graph.jpg" alt="purchase and sales graph">
+                </div>
+
+                <div class="card-rowthree-secondcard">
+
+                    <div class="card-rowthree-card-wordcontent">
+                        <h2>Recently Added Products</h2>
+                    </div>
+
+                    <div class="card-rowthree-secondcard-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th><span>Sno</span></th>
+                                    <th><span>Products</span></th>
+                                    <th><span>Price</span></th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td><span>1</span></td>
+                                <td class="td-span"><img src="images/airpods.jpg" alt="apple earpods"><span>Apple
+                                        earpods</span></td>
+                                <td><span>$891.2</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>2</span></td>
+                                <td class="td-span"><img src="images/iphone 11.jfif" alt="apple iphone11"><span>iphone
+                                        11</span></td>
+                                <td><span>$668.51</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>3</span></td>
+                                <td class="td-span"><img src="images/samsung.jfif" alt="samsung"><span>samsung</span>
+                                </td>
+                                <td><span>$522.29</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>4</span></td>
+                                <td class="td-span"><img src="images/macbook pro.jfif" alt="macbookpro"><span>Macbook
+                                        pro</span></td>
+                                <td><span>$291.01</span></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card-rowthree">
+
+            <div class="card-rowthree-firstcard">
+                <div class="card-rowthree-card-wordcontent">
+
+                    <div>
+                        <h2>Purchase and Sales</h2>
+                    </div>
+
+                    <div style="display:flex;padding:5px;">
+                        <p><span class="dotA"> </span> Sales</p>
+                        <p><span class="dotB"> </span> Purchase</p>
+                        <select name="year" id="year">
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <img src="images/graph.jpg" alt="purchase and sales graph">
+            </div>
+
+            <div class="card-rowthree-secondcard">
+
+                <div class="card-rowthree-card-wordcontent">
+                    <h2>Recently Added Products</h2>
+                </div>
+
+                <div class="card-rowthree-secondcard-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th><span>Sno</span></th>
+                                <th><span>Products</span></th>
+                                <th><span>Price</span></th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td><span>1</span></td>
+                            <td class="td-span"><img src="images/airpods.jpg" alt="apple earpods"><span>Apple
+                                    earpods</span></td>
+                            <td><span>$891.2</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>2</span></td>
+                            <td class="td-span"><img src="images/iphone 11.jfif" alt="apple iphone11"><span>iphone
+                                    11</span></td>
+                            <td><span>$668.51</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>3</span></td>
+                            <td class="td-span"><img src="images/samsung.jfif" alt="samsung"><span>samsung</span>
+                            </td>
+                            <td><span>$522.29</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>4</span></td>
+                            <td class="td-span"><img src="images/macbook pro.jfif" alt="macbookpro"><span>Macbook
+                                    pro</span></td>
+                            <td><span>$291.01</span></td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
 
     </div>
 
+    </div>
+
+    </div>
+
+    <div>
+        <img src="images/dreampos_without button.png.jpg" alt="dreampspos without symbol" class="center-dreamspos-logo">
+    </div>
+
+    <div class="sidebar" onmouseover="sidebarExpanded()" onmouseout="sidebarReduced()">
+
+        <div class="header-left">
+            <img src="images/dreampos_without button.png.jpg" alt="logo" class="logo-expanded">
+            <img src="images/dreampos_onlysymbol.jpg" alt="logoOnlyImage" class="logo-reduced">
+            <img src="images/buttonOn.PNG" alt="butttonOn" onclick="sidebar()" class="click-button">
+            <i class="bi bi-list-columns-reverse" class="sidebar-button-small" onclick="sidebarSmall()"
+                style="display:none;"></i>
+
+        </div>
+
+        <div class="side-panel">
+            <div class="list">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-speedometer2"></i>
+                            <span class="disappearSpan">Dashboard</span>
+                        </a>
+                    </li>
+                    <li onclick="submenuOpen()">
+                        <a href="#">
+                            <i class="bi bi-box-seam"></i>
+                            <span class="disappearSpan">Product</span>
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                Product List
+                            </li>
+                            <li>
+                                Add Product
+                            </li>
+                            <li>
+                                Category List
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-cart"></i>
+                            <span class="disappearSpan">Sales</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-receipt-cutoff"></i>
+                            <span class="disappearSpan">Purchase</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-wallet2"></i>
+                            <span class="disappearSpan">Expense</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-cart-plus"></i>
+                            <span class="disappearSpan">Quotation</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-arrow-left-right"></i>
+                            <span class="disappearSpan">Transfer</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-arrow-return-left"></i>
+                            <span class="disappearSpan">Return</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-person"></i>
+                            <span class="disappearSpan">People</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-speedometer2"></i>
+                            <span class="disappearSpan">Places</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-database"></i>
+                            <span class="disappearSpan">Components</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-file-earmark"></i>
+                            <span class="disappearSpan">Blank Page</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-exclamation-circle"></i>
+                            <span class="disappearSpan">Error Pages</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-box"></i>
+                            <span class="disappearSpan">Elements</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-bar-chart"></i>
+                            <span class="disappearSpan">Charts</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-award"></i>
+                            <span class="disappearSpan">Icons</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-layout-split"></i>
+                            <span class="disappearSpan">Forms</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="overlay"></div>
+
     <script>
+
         function sidebar() {
+            var sidePanel = document.getElementsByClassName("side-panel");
+            var contentArea = document.getElementsByClassName("page-wrapper");
+            var clickButton = document.getElementsByClassName("click-button");
+            var logoExpanded = document.getElementsByClassName("logo-expanded");
+            var logoReduced = document.getElementsByClassName("logo-reduced");
+            var headerLeft = document.getElementsByClassName("header-left");
+            var list = document.getElementsByClassName("list");
+
+            for (var i = 0; i < sidePanel.length; i++) {
+                sidePanel[i].classList.toggle("side-panel-reduced");
+                contentArea[i].classList.toggle("page-wrapper-hovered");
+                headerLeft[i].classList.toggle("header-left-reduced");
+                list[i].classList.toggle("list-reduced");
+            }
+
+            for (var i = 0; i < sidePanel.length; i++) {
+                if (logoExpanded[i].style.display == "none") {
+                    logoExpanded[i].style.display = "inline-block";
+                    logoReduced[i].style.display = "none";
+                    clickButton[i].style.display = "inline-block";
+                }
+                else {
+                    logoReduced[i].style.display = "inline-block";
+                    logoExpanded[i].style.display = "none";
+                    clickButton[i].style.display = "block";
+                }
+            }
 
         }
+
+        function sidebarExpanded() {
+            var logoReduced = document.getElementsByClassName("logo-reduced");
+            var headerLeft = document.getElementsByClassName("header-left-reduced");
+            var sidebar = document.getElementsByClassName("sidebar");
+            var list = document.getElementsByClassName("list");
+            var sidePanel = document.getElementsByClassName("side-panel-reduced");
+            var clickButton = document.getElementsByClassName("click-button");
+            var disappearSpan = document.getElementsByClassName("disappearSpan");
+
+            for (var i = 0; i < logoReduced.length; i++) {
+                logoReduced[i] = logoReduced[i].src = "images/dreampos_without button.png.jpg";
+                logoReduced[i].style.height = "60px";
+                headerLeft[i] = headerLeft[i].style.width = "260px";
+                sidebar[i] = sidebar[i].style.width = "260px";
+                list[i] = list[i].style.width = "240px";
+                sidePanel[i] = sidePanel[i].style.width = "240px";
+                clickButton[i].style.display = "inline-block";
+                for (var k = 0; k < disappearSpan.length; k++) {
+                    disappearSpan[k].style.display = "inline-block";
+                }
+            }
+
+            document.getElementsByClassName("side-panel")[0].style.paddingLeft = "20px";
+            document.getElementsByClassName("list")[0].style.paddingRight = "0px";
+
+        }
+
+        function sidebarReduced() {
+            var logoReduced = document.getElementsByClassName("logo-reduced");
+            var headerLeft = document.getElementsByClassName("header-left-reduced");
+            var sidebar = document.getElementsByClassName("sidebar");
+            var list = document.getElementsByClassName("list");
+            var sidePanel = document.getElementsByClassName("side-panel-reduced");
+            var clickButton = document.getElementsByClassName("click-button");
+            var disappearSpan = document.getElementsByClassName("disappearSpan");
+
+            
+            for (var i = 0; i < logoReduced.length; i++) {
+                logoReduced[i] = logoReduced[i].src = "images/dreampos_onlySymbol.jpg";
+                headerLeft[i] = headerLeft[i].style.width = "90px";
+                sidebar[i] = sidebar[i].style.width = "90px";
+                list[i] = list[i].style.width = "70px";
+                sidePanel[i] = sidePanel[i].style.width = "70px";
+                clickButton[i].style.display = "none";
+                for (var k = 0; k < disappearSpan.length; k++) {
+                    disappearSpan[k].style.display = "none";
+                }
+                
+            }
+            
+            document.getElementsByClassName("side-panel")[0].style.padding = "0";
+            document.getElementsByClassName("side-panel")[0].style.width = "90px";
+            document.getElementsByClassName("list")[0].style.paddingRight = "20px";
+
+        }
+
+        let a = 0;
+        function sidebarSmall() {
+            a++;
+            if (a % 2 != 0) {
+                document.getElementsByClassName("side-panel")[0].style.display = "block";
+                document.getElementsByClassName("list")[0].style.display = "block";
+                document.getElementsByClassName("overlay")[0].style.display = "block";;
+            }
+            else if (a % 2 == 0) {
+                document.getElementsByClassName("side-panel")[0].style.display = "none";
+                document.getElementsByClassName("list")[0].style.display = "none";
+                document.getElementsByClassName("overlay")[0].style.display = "none";
+            }
+        }
+
+        let b = 0;
+        function headerRightSmall() {
+            b++;
+            if (b % 2 != 0) {
+                document.getElementsByClassName("dropdown-menu")[0].style.display = "block";
+            }
+            else if (b % 2 == 0) {
+                document.getElementsByClassName("dropdown-menu")[0].style.display = "none";
+            }
+        }
+
+        function submenuOpen() {
+            document.getElementsByClassName("sub-menu")[0].style.display="block";
+        }
+
     </script>
+
 </body>
 
 </html>
