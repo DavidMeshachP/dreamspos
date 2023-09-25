@@ -282,11 +282,74 @@
                             <span class="disappearSpan">Dashboard</span>
                         </a>
                     </li>
-                    <li onclick="submenuOpen()">
+                    <li class="menu">
                         <a href="#">
                             <i class="bi bi-box-seam"></i>
                             <span class="disappearSpan">Product</span>
-                            <i class="bi bi-chevron-right"></i>
+                            <span class="right-arrow">
+                                <i class="bi bi-chevron-right"></i>
+                            </span>
+
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                Product List
+                            </li>
+                            <li>
+                                Add Product
+                            </li>
+                            <li>
+                                Category List
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="#">
+                            <i class="bi bi-cart"></i>
+                            <span class="disappearSpan">Sales</span>
+                            <span class="right-arrow">
+                                <i class="bi bi-chevron-right"></i>
+                            </span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                Product List
+                            </li>
+                            <li>
+                                Add Product
+                            </li>
+                            <li>
+                                Category List
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="#">
+                            <i class="bi bi-receipt-cutoff"></i>
+                            <span class="disappearSpan">Purchase</span>
+                            <span class="right-arrow">
+                                <i class="bi bi-chevron-right"></i>
+                            </span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                Product List
+                            </li>
+                            <li>
+                                Add Product
+                            </li>
+                            <li>
+                                Category List
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="#">
+                            <i class="bi bi-wallet2"></i>
+                            <span class="disappearSpan">Expense</span>
+                            <span class="right-arrow">
+                                <i class="bi bi-chevron-right"></i>
+                            </span>
                         </a>
                         <ul class="sub-menu">
                             <li>
@@ -302,26 +365,9 @@
                     </li>
                     <li>
                         <a href="#">
-                            <i class="bi bi-cart"></i>
-                            <span class="disappearSpan">Sales</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="bi bi-receipt-cutoff"></i>
-                            <span class="disappearSpan">Purchase</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="bi bi-wallet2"></i>
-                            <span class="disappearSpan">Expense</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
                             <i class="bi bi-cart-plus"></i>
                             <span class="disappearSpan">Quotation</span>
+
                         </a>
                     </li>
                     <li>
@@ -439,6 +485,7 @@
             var sidePanel = document.getElementsByClassName("side-panel-reduced");
             var clickButton = document.getElementsByClassName("click-button");
             var disappearSpan = document.getElementsByClassName("disappearSpan");
+            var arrowSpan = document.getElementsByClassName("right-arrow");
 
             for (var i = 0; i < logoReduced.length; i++) {
                 logoReduced[i] = logoReduced[i].src = "images/dreampos_without button.png.jpg";
@@ -450,6 +497,9 @@
                 clickButton[i].style.display = "inline-block";
                 for (var k = 0; k < disappearSpan.length; k++) {
                     disappearSpan[k].style.display = "inline-block";
+                }
+                for (var l = 0; l < arrowSpan.length; l++) {
+                    arrowSpan[l].style.display = "inline-block";
                 }
             }
 
@@ -466,8 +516,8 @@
             var sidePanel = document.getElementsByClassName("side-panel-reduced");
             var clickButton = document.getElementsByClassName("click-button");
             var disappearSpan = document.getElementsByClassName("disappearSpan");
+            var arrowSpan = document.getElementsByClassName("right-arrow");
 
-            
             for (var i = 0; i < logoReduced.length; i++) {
                 logoReduced[i] = logoReduced[i].src = "images/dreampos_onlySymbol.jpg";
                 headerLeft[i] = headerLeft[i].style.width = "90px";
@@ -478,9 +528,12 @@
                 for (var k = 0; k < disappearSpan.length; k++) {
                     disappearSpan[k].style.display = "none";
                 }
-                
+                for (var l = 0; l < arrowSpan.length; l++) {
+                    arrowSpan[l].style.display = "none";
+                }
+
             }
-            
+
             document.getElementsByClassName("side-panel")[0].style.padding = "0";
             document.getElementsByClassName("side-panel")[0].style.width = "90px";
             document.getElementsByClassName("list")[0].style.paddingRight = "20px";
@@ -513,9 +566,22 @@
             }
         }
 
-        function submenuOpen() {
-            document.getElementsByClassName("sub-menu")[0].style.display="block";
-        }
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const menuItems = document.querySelectorAll('li.menu');
+            menuItems.forEach((menuItem) => {
+                menuItem.addEventListener('click', (event) => {
+                    const subMenu = menuItem.querySelector('.sub-menu');
+                    const allSubMenus = document.querySelectorAll('.sub-menu');
+                    allSubMenus.forEach((menu) => {
+                        if (menu !== subMenu) {
+                            menu.style.display = 'none';
+                        }
+                    });
+                    subMenu.style.display = subMenu.style.display === 'block' ? 'none' : 'block';
+                });
+            });
+        });
+
 
     </script>
 
