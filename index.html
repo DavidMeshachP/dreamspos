@@ -13,10 +13,109 @@
 
     <div class="header">
         <ul class="header-right">
-            <li><img src="images/search.png" alt="search icon" style="width:19px;"></li>
-            <li><img src="images/indianFlag.jfif" alt="indian flag"></li>
-            <li><img src="images/bell.png" alt="notification" style="width:24px;"></li>
-            <li><img src="images/profile.png" alt="profile" style="width:29px;"></li>
+            <li>
+                <img src="images/search.png" alt="search icon" style="width:19px;" onclick="rightTopSearchActive()" class="search-icon">
+                <div class="right-top-search">
+                    <input type="text" placeholder="Search Here....">
+                    <span class="close-button" onclick="rightTopSearch()">
+                        <i class="bi bi-x-square-fill"></i>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <img src="images/indianFlag.jfif" alt="indian flag" onclick="rightTopFlag()">
+                <div class="flag-dropdown">
+                    <ul>
+                        <li>
+                            <img src="images/england flag.jpg" alt="england flag">
+                            <span>English</span>
+                        </li>
+                        <li>
+                            <img src="images/german flag.jpg" alt="german flag">
+                            <span>German</span>
+                        </li>
+                        <li>
+                            <img src="images/france flag.jpg" alt="france flag">
+                            <span>French</span>
+                        </li>
+                        <li>
+                            <img src="images/spain flag.jpg" alt="spain flag">
+                            <span>Spain</span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <img src="images/bell.png" alt="notification" style="width:24px;" onclick="notificationDropdown()">
+                <img src="images/four.png" alt="number four" class="number-four" onclick="notificationDropdown()">
+                <div class="notification-dropdown">
+                    <div class="notification-header">
+                        <span>
+                            Notification
+                        </span>
+                        <span class="clear-message">
+                            Clear All
+                        </span>
+                    </div>
+                    <div class="notification-content">
+                        <ul>
+                            <li>
+                                <i class="bi bi-person-circle"></i>
+                                <span>
+                                    Lorem ipsum dolor sit amet 
+                                </span>
+                            </li>
+                            <li>
+                                <i class="bi bi-person-circle"></i>
+                                <span>
+                                    Lorem ipsum dolor sit amet 
+                                </span>
+                            </li>
+                            <li>
+                                <i class="bi bi-person-circle"></i>
+                                <span>
+                                    Lorem ipsum dolor sit amet 
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </li>
+            <li>
+                <img src="images/profile.png" alt="profile" style="width:29px;" onclick="profileDropdown()">
+                <div class="profile-dropdown">
+                    <ul>
+                        <li class="profile-dropdown-header">
+                            <div class="profile-dropdown-dp">
+                                <i class="bi bi-person-circle"></i>
+                            </div>
+                            <div class="profile-dropdown-wordcontent">
+                                <span class="name">
+                                    John Doe
+                                </span>
+                                <span class="admin">
+                                    Admin
+                                </span>
+                            </div>
+                        </li>
+                        <hr>
+                        <li class="profile-dropdown-subcontent">
+                            <i class="bi bi-person"></i>
+                            <span>Profile</span>        
+                        </li>
+                        <li class="profile-dropdown-subcontent">
+                            <i class="bi bi-gear"></i>
+                            <span>Settings</span>
+                        </li>
+                        <hr>
+                        <li class="profile-dropdown-logout">
+                            <i class="bi bi-box-arrow-left"></i>
+                            <span>Logout</span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
         </ul>
         <div class="dropdown">
             <i class="bi bi-three-dots-vertical" class="header-right-button-small" onclick="headerRightSmall()"></i>
@@ -582,6 +681,48 @@
             });
         });
 
+        function rightTopSearchActive() {
+            document.getElementsByClassName("right-top-search")[0].style.display="block";
+            document.getElementsByClassName("search-icon")[0].style.display="none";
+        }
+
+        function rightTopSearch() {
+            document.getElementsByClassName("right-top-search")[0].style.display="none";
+            document.getElementsByClassName("search-icon")[0].style.display="block";
+        }
+
+        let c=0;
+        function rightTopFlag() {
+            c++;
+            if (c%2==0) {
+                document.getElementsByClassName("flag-dropdown")[0].style.display="none";
+            }
+            else {
+                document.getElementsByClassName("flag-dropdown")[0].style.display="block";
+            }
+        }
+
+        let d=0;
+        function notificationDropdown() {
+            d++;
+            if(d%2==0) {
+                document.getElementsByClassName("notification-dropdown")[0].style.display="none";
+            }
+            else {
+                document.getElementsByClassName("notification-dropdown")[0].style.display="block";
+            }
+        }
+
+        let e=0;
+        function profileDropdown() {
+            e++;
+            if ( e % 2 == 0 ) {
+                document.getElementsByClassName("profile-dropdown")[0].style.display = "none";
+            }   
+            else {
+                document.getElementsByClassName("profile-dropdown")[0].style.display = "block";
+            }
+        }
 
     </script>
 
